@@ -2,6 +2,8 @@
 
 import logging
 
+log = logging.getLogger(__name__)
+
 def run():
   retval = {}
 
@@ -15,6 +17,8 @@ def run():
   retval.update(exp)
   retval['id_info'] = exp
 
+
+  log.debug('**<*>** {0}'.format(retval))
 
   return retval
 
