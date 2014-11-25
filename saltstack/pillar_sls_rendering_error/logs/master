@@ -1,0 +1,744 @@
+
+2014-11-25 10:24:31,748 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master
+2014-11-25 10:24:31,761 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/auth.conf'
+2014-11-25 10:24:31,762 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/auth.conf
+2014-11-25 10:24:31,765 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/ca.conf'
+2014-11-25 10:24:31,765 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/ca.conf
+2014-11-25 10:24:31,767 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/gpg_renderer.conf'
+2014-11-25 10:24:31,767 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/gpg_renderer.conf
+2014-11-25 10:24:31,769 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/halite.conf'
+2014-11-25 10:24:31,769 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/halite.conf
+2014-11-25 10:24:31,775 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/ovirt.conf'
+2014-11-25 10:24:31,775 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/ovirt.conf
+2014-11-25 10:24:31,783 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/pillar.conf'
+2014-11-25 10:24:31,784 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/pillar.conf
+2014-11-25 10:24:31,790 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/reactor.conf'
+2014-11-25 10:24:31,790 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/reactor.conf
+2014-11-25 10:24:31,792 [salt.config      ][DEBUG   ] Guessing ID. The id can be explicitly in set /etc/salt/minion
+2014-11-25 10:24:31,816 [salt.config      ][INFO    ] Found minion id from generate_minion_id(): salt-master.saltlab
+2014-11-25 10:24:31,819 [salt.config      ][DEBUG   ] Missing configuration file: ~/.saltrc
+2014-11-25 10:24:31,822 [salt.utils.event ][DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+2014-11-25 10:24:31,823 [salt.utils.event ][DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+2014-11-25 10:24:31,828 [salt.master                                ][INFO    ] Clear payload received with command publish
+2014-11-25 10:24:31,830 [salt.loader                                ][DEBUG   ] LazyLoaded local_cache.prep_jid
+2014-11-25 10:24:31,833 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'_stamp': '2014-11-25T10:24:31.832112', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:24:31,834 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20141125102431830826', 'tgt': '*', '_stamp': '2014-11-25T10:24:31.833566', 'user': 'root', 'arg': [], 'fun': 'saltutil.refresh_pillar', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:24:31,834 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20141125102431830826', 'tgt': '*', '_stamp': '2014-11-25T10:24:31.834148', 'user': 'root', 'arg': [], 'fun': 'saltutil.refresh_pillar', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:24:31,835 [salt.master                                ][INFO    ] User root Published command saltutil.refresh_pillar with jid 20141125102431830826
+2014-11-25 10:24:31,836 [salt.master                                ][DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20141125102431830826', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': [], 'fun': 'saltutil.refresh_pillar'}
+2014-11-25 10:24:31,836 [salt.master                                ][DEBUG   ] Signing data packet
+2014-11-25 10:24:31,837 [salt.crypt                                 ][DEBUG   ] salt.crypt.sign_message: Loading private key
+2014-11-25 10:24:31,838 [salt.crypt                                 ][DEBUG   ] salt.crypt.sign_message: Signing message.
+2014-11-25 10:24:31,869 [salt.loader      ][DEBUG   ] LazyLoaded local_cache.get_load
+2014-11-25 10:24:31,870 [salt.client      ][DEBUG   ] get_iter_returns for jid 20141125102431830826 sent to set(['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']) will timeout at 10:24:36.869355
+2014-11-25 10:24:35,949 [salt.master                                ][INFO    ] Clear payload received with command _auth
+2014-11-25 10:24:35,950 [salt.master                                ][INFO    ] Authentication request from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:35,951 [salt.master                                ][INFO    ] Authentication accepted from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:36,084 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'id': 'app-01.mt.widpi.lab.iad3.caltesting.org', '_stamp': '2014-11-25T10:24:36.083181', 'result': True, 'pub': '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApmETuRJBqDAurx9MlUZQ\n8b3jP/OqaeDECAV5KWA+0bUXZAx/tizDg62YbDGBEd9BbAbM2RFdXN9SBtykikji\nclPJc6yjtBZDEykWsGfwuB8JchjadKIthUEj3+UHKma635b8H+1btH7Zj+zxkXG5\nQDaHuyrGXC7suSzcc9aXskddDeF/+dTfqKpETyvci8ebyI5sxK9E8f3Q1EWp5o7U\n0C+mHE9/Cvz0xoa+nkyLrUY+sdG/WBt2o2PmhZ9EYMLLXfhJuFOW9Sg4vqLPCki1\n5yFgpa4OKJCyjF9WXY3pS6UMM1DN5qkGlz5A72l5gfxvtMQnYk5HQU2xjMXhLHlV\nae4bk6k4GRz07W8aUKt1WgP85iwSy3tViKFbz3BA1YQhF8dJU5NEMOcOWKDzckK9\nvqfCrgd7v4ArNuaKQwnwpCZJ+Qp39AlefRXsYnHEl/CMqfYdEwbC00Sn3hxvlETA\n0jF69plyqX59Sv08pa2WdZePCNAXQ1dWGggD8Z6Dt9lCEEpPpK7wu/J5s8g9Fa3T\nWvYdmQmafuYT3fXG7T91USYgUiyoHpG1Xk0+9MQ3/NdXbOWlQ6flkMJvAgQ5Ln2M\n3WmzoJ9EikXvFux8E49ChWfSK3QncCn6EorCCiIqN26p/aJ8fnW0Q2EOH9RkExZP\nMR+DOyJwyHyolWJWLRZC51cCAwEAAQ==\n-----END PUBLIC KEY-----\n', 'act': 'accept'}
+2014-11-25 10:24:36,270 [salt.master                                ][INFO    ] Clear payload received with command _auth
+2014-11-25 10:24:36,271 [salt.master                                ][INFO    ] Authentication request from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:36,272 [salt.master                                ][INFO    ] Authentication accepted from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:36,299 [salt.master                                ][INFO    ] Clear payload received with command _auth
+2014-11-25 10:24:36,300 [salt.master                                ][INFO    ] Authentication request from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:36,301 [salt.master                                ][INFO    ] Authentication accepted from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:36,407 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'id': 'app-01.mt.widpi.lab.iad3.caltesting.org', '_stamp': '2014-11-25T10:24:36.406682', 'result': True, 'pub': '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApmETuRJBqDAurx9MlUZQ\n8b3jP/OqaeDECAV5KWA+0bUXZAx/tizDg62YbDGBEd9BbAbM2RFdXN9SBtykikji\nclPJc6yjtBZDEykWsGfwuB8JchjadKIthUEj3+UHKma635b8H+1btH7Zj+zxkXG5\nQDaHuyrGXC7suSzcc9aXskddDeF/+dTfqKpETyvci8ebyI5sxK9E8f3Q1EWp5o7U\n0C+mHE9/Cvz0xoa+nkyLrUY+sdG/WBt2o2PmhZ9EYMLLXfhJuFOW9Sg4vqLPCki1\n5yFgpa4OKJCyjF9WXY3pS6UMM1DN5qkGlz5A72l5gfxvtMQnYk5HQU2xjMXhLHlV\nae4bk6k4GRz07W8aUKt1WgP85iwSy3tViKFbz3BA1YQhF8dJU5NEMOcOWKDzckK9\nvqfCrgd7v4ArNuaKQwnwpCZJ+Qp39AlefRXsYnHEl/CMqfYdEwbC00Sn3hxvlETA\n0jF69plyqX59Sv08pa2WdZePCNAXQ1dWGggD8Z6Dt9lCEEpPpK7wu/J5s8g9Fa3T\nWvYdmQmafuYT3fXG7T91USYgUiyoHpG1Xk0+9MQ3/NdXbOWlQ6flkMJvAgQ5Ln2M\n3WmzoJ9EikXvFux8E49ChWfSK3QncCn6EorCCiIqN26p/aJ8fnW0Q2EOH9RkExZP\nMR+DOyJwyHyolWJWLRZC51cCAwEAAQ==\n-----END PUBLIC KEY-----\n', 'act': 'accept'}
+2014-11-25 10:24:36,436 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'id': 'app-01.mt.widpi.lab.iad3.caltesting.org', '_stamp': '2014-11-25T10:24:36.435261', 'result': True, 'pub': '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApmETuRJBqDAurx9MlUZQ\n8b3jP/OqaeDECAV5KWA+0bUXZAx/tizDg62YbDGBEd9BbAbM2RFdXN9SBtykikji\nclPJc6yjtBZDEykWsGfwuB8JchjadKIthUEj3+UHKma635b8H+1btH7Zj+zxkXG5\nQDaHuyrGXC7suSzcc9aXskddDeF/+dTfqKpETyvci8ebyI5sxK9E8f3Q1EWp5o7U\n0C+mHE9/Cvz0xoa+nkyLrUY+sdG/WBt2o2PmhZ9EYMLLXfhJuFOW9Sg4vqLPCki1\n5yFgpa4OKJCyjF9WXY3pS6UMM1DN5qkGlz5A72l5gfxvtMQnYk5HQU2xjMXhLHlV\nae4bk6k4GRz07W8aUKt1WgP85iwSy3tViKFbz3BA1YQhF8dJU5NEMOcOWKDzckK9\nvqfCrgd7v4ArNuaKQwnwpCZJ+Qp39AlefRXsYnHEl/CMqfYdEwbC00Sn3hxvlETA\n0jF69plyqX59Sv08pa2WdZePCNAXQ1dWGggD8Z6Dt9lCEEpPpK7wu/J5s8g9Fa3T\nWvYdmQmafuYT3fXG7T91USYgUiyoHpG1Xk0+9MQ3/NdXbOWlQ6flkMJvAgQ5Ln2M\n3WmzoJ9EikXvFux8E49ChWfSK3QncCn6EorCCiIqN26p/aJ8fnW0Q2EOH9RkExZP\nMR+DOyJwyHyolWJWLRZC51cCAwEAAQ==\n-----END PUBLIC KEY-----\n', 'act': 'accept'}
+2014-11-25 10:24:36,671 [salt.master                                ][INFO    ] AES payload received with command _pillar
+2014-11-25 10:24:36,673 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.__init__, line, 127
+2014-11-25 10:24:36,689 [salt.master                                ][INFO    ] AES payload received with command _return
+2014-11-25 10:24:36,710 [salt.pillar                                ][CRITICAL]  1 ##### opts:
+opts and whatnot
+grains: grains and things
+id_: app-01.mt.widpi.lab.iad3.caltesting.org, saltenv: None
+ext=None
+2014-11-25 10:24:36,711 [salt.master                                ][INFO    ] Got return from app-01.mt.widpi.lab.iad3.caltesting.org for job 20141125102431830826
+2014-11-25 10:24:36,711 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.__gen_opts, line, 178
+2014-11-25 10:24:36,711 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.__valid_ext, line, 166
+2014-11-25 10:24:36,712 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.__valid_ext, line, 166
+2014-11-25 10:24:36,712 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.__gen_opts, line, 178
+2014-11-25 10:24:36,712 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'fun_args': [], 'jid': '20141125102431830826', 'return': True, 'retcode': 0, 'success': True, 'cmd': '_return', '_stamp': '2014-11-25T10:24:36.711800', 'fun': 'saltutil.refresh_pillar', 'id': 'app-01.mt.widpi.lab.iad3.caltesting.org'}
+2014-11-25 10:24:36,713 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'fun_args': [], 'jid': '20141125102431830826', 'return': True, 'retcode': 0, 'success': True, 'cmd': '_return', '_stamp': '2014-11-25T10:24:36.712957', 'fun': 'saltutil.refresh_pillar', 'id': 'app-01.mt.widpi.lab.iad3.caltesting.org'}
+2014-11-25 10:24:36,715 [salt.loader                                ][DEBUG   ] LazyLoaded local_cache.returner
+2014-11-25 10:24:36,716 [salt.client      ][DEBUG   ] jid 20141125102431830826 return from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:36,782 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.__init__, line, 127
+2014-11-25 10:24:36,783 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.compile_pillar, line, 616
+2014-11-25 10:24:36,783 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.get_top, line, 356
+2014-11-25 10:24:36,783 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.get_tops, line, 225
+2014-11-25 10:24:36,783 [stephens_little_package                    ][CRITICAL] ---> salt.pillar._get_envs, line, 215
+2014-11-25 10:24:36,784 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar._get_envs, line, 215
+2014-11-25 10:24:36,789 [salt.utils.jinja                           ][DEBUG   ] Jinja search path: ['/srv/pillar/base', '/srv/pillar/private']
+2014-11-25 10:24:36,798 [salt.template                              ][DEBUG   ] Rendered data from file: /srv/pillar/base/top.sls:
+base:
+  '*':
+    - mine_config
+    - id_info
+
+2014-11-25 10:24:36,801 [salt.loaded.int.render.yaml                ][DEBUG   ] Results of YAML rendering: 
+OrderedDict([('base', OrderedDict([('*', ['mine_config', 'id_info'])]))])
+2014-11-25 10:24:36,802 [salt.loaded.ext.render.gpg                 ][DEBUG   ] Reading GPG keys from: /root/.gnupg
+2014-11-25 10:24:36,804 [gnupg                                      ][DEBUG   ] ['gpg', '--status-fd', '2', '--no-tty', '--homedir', '/root/.gnupg', '--version']
+2014-11-25 10:24:36,817 [gnupg                                      ][DEBUG   ] stderr reader: <Thread(Thread-1, initial daemon)>
+2014-11-25 10:24:36,822 [gnupg                                      ][DEBUG   ] stdout reader: <Thread(Thread-2, initial daemon)>
+2014-11-25 10:24:36,824 [gnupg                                      ][DEBUG   ] chunk: 'gpg (GnuPG) 2.0.14\nlibgcrypt 1.4.5\nCopyright (C) 2009 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to t'
+2014-11-25 10:24:36,825 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.get_tops, line, 225
+2014-11-25 10:24:36,826 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_tops, line, 307
+2014-11-25 10:24:36,827 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.sort_top_targets, line, 341
+2014-11-25 10:24:36,827 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.sort_top_targets, line, 341
+2014-11-25 10:24:36,827 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_tops, line, 307
+2014-11-25 10:24:36,828 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.get_top, line, 356
+2014-11-25 10:24:36,829 [salt.pillar                                ][CRITICAL]  1 ############: get_top = 
+top: defaultdict(<class 'collections.OrderedDict'>, {'base': OrderedDict([('*', ['mine_config', 'id_info'])])})
+terrors: []
+
+2014-11-25 10:24:36,829 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.top_matches, line, 369
+2014-11-25 10:24:36,830 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.top_matches, line, 369
+2014-11-25 10:24:36,830 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.top_matches, line, 369
+2014-11-25 10:24:36,831 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.top_matches, line, 369
+2014-11-25 10:24:36,832 [salt.pillar                                ][CRITICAL]  1.5 ############: top_matches = {'base': ['mine_config', 'id_info']}
+2014-11-25 10:24:36,832 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.render_pillar, line, 470
+2014-11-25 10:24:36,833 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.render_pstate, line, 396
+2014-11-25 10:24:36,838 [salt.utils.jinja                           ][DEBUG   ] Jinja search path: ['/srv/pillar/base', '/srv/pillar/private']
+2014-11-25 10:24:36,841 [salt.template                              ][DEBUG   ] Rendered data from file: /srv/pillar/base/mine_config.sls:
+
+mine_functions:
+  projects:
+    mine_function: grains.get
+    key: projects
+  project_lists:
+    mine_function: pillar.get
+    key: project_list
+
+mine_interval: 5
+
+
+2014-11-25 10:24:36,848 [salt.loaded.int.render.yaml                ][DEBUG   ] Results of YAML rendering: 
+OrderedDict([('mine_functions', OrderedDict([('projects', OrderedDict([('mine_function', 'grains.get'), ('key', 'projects')])), ('project_lists', OrderedDict([('mine_function', 'pillar.get'), ('key', 'project_list')]))])), ('mine_interval', 5)])
+2014-11-25 10:24:36,849 [salt.loaded.ext.render.gpg                 ][DEBUG   ] Reading GPG keys from: /root/.gnupg
+2014-11-25 10:24:36,849 [gnupg                                      ][DEBUG   ] ['gpg', '--status-fd', '2', '--no-tty', '--homedir', '/root/.gnupg', '--version']
+2014-11-25 10:24:36,862 [gnupg                                      ][DEBUG   ] stderr reader: <Thread(Thread-3, initial daemon)>
+2014-11-25 10:24:36,864 [gnupg                                      ][DEBUG   ] stdout reader: <Thread(Thread-4, initial daemon)>
+2014-11-25 10:24:36,865 [gnupg                                      ][DEBUG   ] chunk: 'gpg (GnuPG) 2.0.14\nlibgcrypt 1.4.5\nCopyright (C) 2009 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to t'
+2014-11-25 10:24:36,866 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.render_pstate, line, 396
+2014-11-25 10:24:36,867 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_sources, line, 591
+2014-11-25 10:24:36,867 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_recurse, line, 29
+2014-11-25 10:24:36,868 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_recurse, line, 29
+2014-11-25 10:24:36,868 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_sources, line, 591
+2014-11-25 10:24:36,869 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.render_pstate, line, 396
+2014-11-25 10:24:36,870 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.int.render.py.render, line, 83
+2014-11-25 10:24:36,872 [salt.utils.event ][DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+2014-11-25 10:24:36,872 [salt.utils.event ][DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+2014-11-25 10:24:36,873 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.module.id_info.explode, line, 99
+2014-11-25 10:24:36,873 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.module.id_info.hostinfo, line, 19
+2014-11-25 10:24:36,873 [salt.loaded.ext.module.id_info             ][CRITICAL]  minion_id = app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:36,874 [salt.client      ][DEBUG   ] Checking whether jid 20141125102431830826 is still running
+2014-11-25 10:24:36,875 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.module.id_info.hostinfo, line, 19
+2014-11-25 10:24:36,875 [salt.master                                ][INFO    ] Clear payload received with command publish
+2014-11-25 10:24:36,875 [salt.loaded.ext.module.id_info             ][CRITICAL]  minion_id = app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:36,876 [salt.loaded.ext.module.id_info             ][CRITICAL] Host lookup successful.  host = "app-01.mt.widpi.lab.iad3.caltesting.org"
+2014-11-25 10:24:36,878 [salt.loader                                ][DEBUG   ] LazyLoaded local_cache.prep_jid
+2014-11-25 10:24:36,879 [salt.loaded.ext.module.id_info             ][CRITICAL] and now, ID_INFO() (the ext_module): 
+{'component': 'mt',
+ 'environment': 'lab',
+ 'instance': '01',
+ 'location': 'iad3',
+ 'project': 'widpi',
+ 'project_list': {'widpi': {'mt': ['app']}},
+ 'subcomponent': 'app'}
+2014-11-25 10:24:36,880 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.module.id_info.explode, line, 99
+2014-11-25 10:24:36,880 [id_info                                    ][DEBUG   ] **<*>** {'environment': 'lab', 'project': 'widpi', 'project_list': {'widpi': {'mt': ['app']}}, 'location': 'iad3', 'instance': '01', 'subcomponent': 'app', 'component': 'mt', 'id_info': {'environment': 'lab', 'component': 'mt', 'project': 'widpi', 'instance': '01', 'location': 'iad3', 'subcomponent': 'app'}}
+2014-11-25 10:24:36,881 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'_stamp': '2014-11-25T10:24:36.880057', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:24:36,881 [salt.pillar                                ][CRITICAL] Rendering SLS 'id_info' failed, render error:
+global name 'log' is not defined
+2014-11-25 10:24:36,881 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.render_pstate, line, 396
+2014-11-25 10:24:36,881 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20141125102436878528', 'tgt': '*', '_stamp': '2014-11-25T10:24:36.881209', 'user': 'root', 'arg': ['20141125102431830826'], 'fun': 'saltutil.find_job', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:24:36,882 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.render_pillar, line, 470
+2014-11-25 10:24:36,882 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20141125102436878528', 'tgt': '*', '_stamp': '2014-11-25T10:24:36.881935', 'user': 'root', 'arg': ['20141125102431830826'], 'fun': 'saltutil.find_job', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:24:36,884 [salt.master                                ][INFO    ] User root Published command saltutil.find_job with jid 20141125102436878528
+2014-11-25 10:24:36,884 [salt.master                                ][DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20141125102436878528', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': ['20141125102431830826'], 'fun': 'saltutil.find_job'}
+2014-11-25 10:24:36,884 [salt.pillar                                ][CRITICAL] 
+
+ 2 ############: render_pillar = 
+pillar: {'mine_functions': {'project_lists': {'key': 'project_list',
+                                      'mine_function': 'pillar.get'},
+                    'projects': {'key': 'projects',
+                                 'mine_function': 'grains.get'}},
+ 'mine_interval': 5}
+errors: ["Rendering SLS 'id_info' failed. Please see master log for details."]
+
+2014-11-25 10:24:36,885 [salt.master                                ][DEBUG   ] Signing data packet
+2014-11-25 10:24:36,886 [salt.crypt                                 ][DEBUG   ] salt.crypt.sign_message: Loading private key
+2014-11-25 10:24:36,886 [salt.pillar                                ][CRITICAL] 
+
+ 3 ############: ext_pillar called with pillar:
+ {'mine_functions': {'project_lists': {'key': 'project_list',
+                                      'mine_function': 'pillar.get'},
+                    'projects': {'key': 'projects',
+                                 'mine_function': 'grains.get'}},
+ 'mine_interval': 5}
+
+pillar_dirs:
+{}
+2014-11-25 10:24:36,886 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.ext_pillar, line, 534
+2014-11-25 10:24:36,887 [salt.crypt                                 ][DEBUG   ] salt.crypt.sign_message: Signing message.
+2014-11-25 10:24:36,888 [salt.pillar                                ][CRITICAL] 
+
+  1 ##### pillar: 
+{'mine_functions': {'project_lists': {'key': 'project_list',
+                                      'mine_function': 'pillar.get'},
+                    'projects': {'key': 'projects',
+                                 'mine_function': 'grains.get'}},
+ 'mine_interval': 5}
+
+pillar_dirs: {}
+
+2014-11-25 10:24:36,888 [salt.pillar                                ][CRITICAL] Run ext_pillar: {'fukauf': {}}
+2014-11-25 10:24:36,889 [stephens_little_package                    ][CRITICAL] ---> salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:24:36,889 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.fukauf.ext_pillar, line, 10
+2014-11-25 10:24:36,889 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.fukauf.ext_pillar, line, 10
+2014-11-25 10:24:36,889 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:24:36,890 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_sources, line, 591
+2014-11-25 10:24:36,890 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_recurse, line, 29
+2014-11-25 10:24:36,890 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_recurse, line, 29
+2014-11-25 10:24:36,891 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_sources, line, 591
+2014-11-25 10:24:36,891 [salt.pillar                                ][CRITICAL] Run ext_pillar: {'component_matches': {}}
+2014-11-25 10:24:36,891 [stephens_little_package                    ][CRITICAL] ---> salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:24:36,892 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.component_matches.ext_pillar, line, 337
+2014-11-25 10:24:36,892 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.module.id_info.explode, line, 99
+2014-11-25 10:24:36,892 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.module.id_info.hostinfo, line, 19
+2014-11-25 10:24:36,892 [salt.loaded.ext.module.id_info             ][CRITICAL]  minion_id = app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:36,893 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.module.id_info.hostinfo, line, 19
+2014-11-25 10:24:36,893 [salt.loaded.ext.module.id_info             ][CRITICAL]  minion_id = app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:36,894 [salt.loaded.ext.module.id_info             ][CRITICAL] Host lookup successful.  host = "app-01.mt.widpi.lab.iad3.caltesting.org"
+2014-11-25 10:24:36,895 [salt.loaded.ext.module.id_info             ][CRITICAL] and now, ID_INFO() (the ext_module): 
+{'component': 'mt',
+ 'environment': 'lab',
+ 'instance': '01',
+ 'location': 'iad3',
+ 'project': 'widpi',
+ 'project_list': {'widpi': {'mt': ['app']}},
+ 'subcomponent': 'app'}
+2014-11-25 10:24:36,895 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.module.id_info.explode, line, 99
+2014-11-25 10:24:36,896 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ] -=-=-=-app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:36,896 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ] app-01.mt.widpi.lab.iad3.caltesting.org dispatched to single-tenant pillar
+2014-11-25 10:24:36,896 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.component_matches._traverse_single_tenant, line, 283
+2014-11-25 10:24:36,897 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.component_matches._base_app_data, line, 205
+2014-11-25 10:24:36,897 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]         get stennant base data from /srv/pillar/base/applications/widpi/all_the_things.yaml
+2014-11-25 10:24:36,897 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]       Reading configuration data from /srv/pillar/base/applications/widpi/all_the_things.yaml
+2014-11-25 10:24:36,951 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.component_matches._base_app_data, line, 205
+2014-11-25 10:24:36,951 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.component_matches._base_app_data, line, 205
+2014-11-25 10:24:36,951 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]         get stennant base data from /srv/pillar/base/applications/widpi/lab/all_things_lab.yaml
+2014-11-25 10:24:36,952 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]       Reading configuration data from /srv/pillar/base/applications/widpi/lab/all_things_lab.yaml
+2014-11-25 10:24:36,952 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.component_matches._base_app_data, line, 205
+2014-11-25 10:24:36,953 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]  _tst() --> ATT: 
+{'haproxy': {'ep': [{'sls_files': ['applications/widpi/ep/*']}]}, 'rs': {'app': [{'sls_files': ['applications/widpi/rs/tomcat/app']}], 'bat': [{'sls_files': ['applications/widpi/rs/tomcat/bat']}]}, 'gluster': {'brick': [{'sls_files': ['applications/widpi/gluster/*']}]}, 'tde': {'adm': [{'sls_files': ['applications/widpi/tde/tomcat/adm']}], 'api': [{'sls_files': ['applications/widpi/tde/tomcat/api', 'applications/widpi/tde/pg', 'applications/widpi/pg/info', 'applications/widpi/tde/mq', 'applications/widpi/mq/platform_tde_recvq']}], 'db': [{'sls_files': ['applications/widpi/tde/pg', 'applications/widpi/pg/info']}]}, 'mt': {'app': [{'sls_files': ['applications/widpi/mt/tomcat/app', 'applications/widpi/mq/platform_mt_recvq']}], 'api': [{'sls_files': ['applications/widpi/mt/tomcat/api', 'applications/widpi/mq/platform_mt_recvq']}], 'db': [{'sls_files': ['applications/widpi/mt/pg', 'applications/widpi/pg/info']}, {'sls_files': ['applications/widpi/mt/pg_replication', 'applications/widpi/pg/info']}], 'bat': [{'sls_files': ['applications/widpi/mt/tomcat/bat', 'applications/widpi/mt/pg', 'applications/widpi/pg/info']}]}, 'at': {'api': [{'sls_files': ['applications/widpi/at/tomcat/api']}]}, 'rabbit': {'mq': [{'sls_files': ['applications/widpi/mq/*']}]}, 'dw': {'bat': [{'sls_files': ['applications/widpi/dw/tomcat/bat', 'applications/widpi/dw/pg', 'applications/widpi/pg/info']}], 'api': [{'sls_files': ['applications/widpi/dw/tomcat/api', 'applications/widpi/dw/pg', 'applications/widpi/pg/info']}], 'db': [{'sls_files': ['applications/widpi/dw/pg', 'applications/widpi/pg/info']}], 'es': [{'sls_files': ['applications/widpi/dw/es']}]}, 'tss': {'bat': [{'sls_files': ['applications/widpi/tss/tomcat/bat']}], 'api': [{'sls_files': ['applications/widpi/tss/tomcat/api', 'applications/widpi/tss/mongo', 'applications/widpi/mq/platform_tss_announce', 'applications/widpi/at/ep']}], 'modsec': [{'sls_files': ['applications/widpi/tss/http', 'applications/widpi/tss/owasp']}], 'mongo': [{'sls_files': ['applications/widpi/mongo/db_admin', 'applications/widpi/mongo/db_users']}]}}
+2014-11-25 10:24:36,955 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ] 	tcd(): 
+		instance_vals = {'sls_files': ['applications/widpi/mt/tomcat/app',
+               'applications/widpi/mq/platform_mt_recvq']}
+		config_bits = [{'sls_files': ['applications/widpi/mt/tomcat/app',
+                'applications/widpi/mq/platform_mt_recvq']}]
+2014-11-25 10:24:36,955 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]   _tcd(): sls_files = ['/srv/pillar/base/applications/widpi/lab/mt/tomcat/app',
+ '/srv/pillar/base/applications/widpi/lab/mq/platform_mt_recvq']
+2014-11-25 10:24:36,956 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.component_matches._read_app_data, line, 173
+2014-11-25 10:24:36,956 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]  _rad(): sls_files = ['/srv/pillar/base/applications/widpi/lab/mt/tomcat/app',
+ '/srv/pillar/base/applications/widpi/lab/mq/platform_mt_recvq']
+2014-11-25 10:24:36,957 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]  _rad(): sls_file (bits_to_read): ['/srv/pillar/base/applications/widpi/lab/mt/tomcat/app']
+2014-11-25 10:24:36,964 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]      reading: /srv/pillar/base/applications/widpi/lab/mt/tomcat/app and got: 
+{'tomcat': {'jdbc_name': 'jdbc/nothing',
+            'max_heap': '512m',
+            'max_perm': '128m',
+            'overrides': ['max_heap', 'start_heap', 'max_perm', 'jdbc_name'],
+            'says': 'meow',
+            'start_heap': '128m'}}
+2014-11-25 10:24:36,964 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]  _rad(): sls_file (bits_to_read): []
+2014-11-25 10:24:36,966 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]  _rad(): returning this:  {'tomcat': {'jdbc_name': 'jdbc/nothing',
+            'max_heap': '512m',
+            'max_perm': '128m',
+            'overrides': ['max_heap', 'start_heap', 'max_perm', 'jdbc_name'],
+            'says': 'meow',
+            'start_heap': '128m'}}
+2014-11-25 10:24:36,966 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.component_matches._read_app_data, line, 173
+2014-11-25 10:24:36,966 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.component_matches._traverse_single_tenant, line, 283
+2014-11-25 10:24:36,967 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.component_matches.ext_pillar, line, 337
+2014-11-25 10:24:36,967 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:24:36,967 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_sources, line, 591
+2014-11-25 10:24:36,968 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_recurse, line, 29
+2014-11-25 10:24:36,968 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_recurse, line, 29
+2014-11-25 10:24:36,968 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_sources, line, 591
+2014-11-25 10:24:36,969 [salt.pillar                                ][CRITICAL] Run ext_pillar: {'tls_gen': {'filter_': '^\\s*__@(.*)@__\\s*.*'}}
+2014-11-25 10:24:36,969 [stephens_little_package                    ][CRITICAL] ---> salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:24:36,970 [salt.loaded.ext.pillar.tls_gen             ][DEBUG   ] FILTER: ^\s*__@(.*)@__\s*.*
+2014-11-25 10:24:36,970 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:24:36,971 [salt.pillar                                ][CRITICAL] Run ext_pillar: {'secrets': {'filter_': '^\\s*o_@(.*)@_o\\s*.*', 'gnupg_user': 'CA&L Salt Master'}}
+2014-11-25 10:24:36,971 [stephens_little_package                    ][CRITICAL] ---> salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:24:36,972 [salt.loaded.ext.pillar.secrets             ][DEBUG   ] FILTER: ^\s*o_@(.*)@_o\s*.*
+2014-11-25 10:24:36,972 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:24:36,973 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.ext_pillar, line, 534
+2014-11-25 10:24:36,973 [salt.pillar                                ][CRITICAL] 
+
+ 4 ###########: errors: ["Rendering SLS 'id_info' failed. Please see master log for details."]
+length of errors: 1
+2014-11-25 10:24:36,974 [salt.pillar                                ][CRITICAL] Pillar render error: Rendering SLS 'id_info' failed. Please see master log for details.
+2014-11-25 10:24:36,974 [salt.pillar                                ][CRITICAL]  5 ############: final pillar = 
+
+2014-11-25 10:24:36,974 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.compile_pillar, line, 616
+2014-11-25 10:24:37,790 [salt.master                                ][INFO    ] Clear payload received with command _auth
+2014-11-25 10:24:37,790 [salt.master                                ][INFO    ] Authentication request from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:37,791 [salt.master                                ][INFO    ] Authentication accepted from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:24:37,924 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'id': 'app-01.mt.widpi.lab.iad3.caltesting.org', '_stamp': '2014-11-25T10:24:37.923402', 'result': True, 'pub': '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApmETuRJBqDAurx9MlUZQ\n8b3jP/OqaeDECAV5KWA+0bUXZAx/tizDg62YbDGBEd9BbAbM2RFdXN9SBtykikji\nclPJc6yjtBZDEykWsGfwuB8JchjadKIthUEj3+UHKma635b8H+1btH7Zj+zxkXG5\nQDaHuyrGXC7suSzcc9aXskddDeF/+dTfqKpETyvci8ebyI5sxK9E8f3Q1EWp5o7U\n0C+mHE9/Cvz0xoa+nkyLrUY+sdG/WBt2o2PmhZ9EYMLLXfhJuFOW9Sg4vqLPCki1\n5yFgpa4OKJCyjF9WXY3pS6UMM1DN5qkGlz5A72l5gfxvtMQnYk5HQU2xjMXhLHlV\nae4bk6k4GRz07W8aUKt1WgP85iwSy3tViKFbz3BA1YQhF8dJU5NEMOcOWKDzckK9\nvqfCrgd7v4ArNuaKQwnwpCZJ+Qp39AlefRXsYnHEl/CMqfYdEwbC00Sn3hxvlETA\n0jF69plyqX59Sv08pa2WdZePCNAXQ1dWGggD8Z6Dt9lCEEpPpK7wu/J5s8g9Fa3T\nWvYdmQmafuYT3fXG7T91USYgUiyoHpG1Xk0+9MQ3/NdXbOWlQ6flkMJvAgQ5Ln2M\n3WmzoJ9EikXvFux8E49ChWfSK3QncCn6EorCCiIqN26p/aJ8fnW0Q2EOH9RkExZP\nMR+DOyJwyHyolWJWLRZC51cCAwEAAQ==\n-----END PUBLIC KEY-----\n', 'act': 'accept'}
+2014-11-25 10:24:38,071 [salt.master                                ][INFO    ] AES payload received with command _return
+2014-11-25 10:24:38,072 [salt.master                                ][INFO    ] Got return from app-01.mt.widpi.lab.iad3.caltesting.org for job 20141125102436878528
+2014-11-25 10:24:38,073 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'fun_args': ['20141125102431830826'], 'jid': '20141125102436878528', 'return': {}, 'retcode': 0, 'success': True, 'cmd': '_return', '_stamp': '2014-11-25T10:24:38.072569', 'fun': 'saltutil.find_job', 'id': 'app-01.mt.widpi.lab.iad3.caltesting.org'}
+2014-11-25 10:24:38,074 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'fun_args': ['20141125102431830826'], 'jid': '20141125102436878528', 'return': {}, 'retcode': 0, 'success': True, 'cmd': '_return', '_stamp': '2014-11-25T10:24:38.073833', 'fun': 'saltutil.find_job', 'id': 'app-01.mt.widpi.lab.iad3.caltesting.org'}
+2014-11-25 10:24:38,076 [salt.loader                                ][DEBUG   ] LazyLoaded local_cache.returner
+2014-11-25 10:25:00,049 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master
+2014-11-25 10:25:00,066 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/auth.conf'
+2014-11-25 10:25:00,066 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/auth.conf
+2014-11-25 10:25:00,069 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ca.conf'
+2014-11-25 10:25:00,070 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ca.conf
+2014-11-25 10:25:00,071 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/gpg_renderer.conf'
+2014-11-25 10:25:00,071 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/gpg_renderer.conf
+2014-11-25 10:25:00,073 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/halite.conf'
+2014-11-25 10:25:00,074 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/halite.conf
+2014-11-25 10:25:00,080 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ovirt.conf'
+2014-11-25 10:25:00,080 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ovirt.conf
+2014-11-25 10:25:00,088 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/pillar.conf'
+2014-11-25 10:25:00,088 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/pillar.conf
+2014-11-25 10:25:00,094 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/reactor.conf'
+2014-11-25 10:25:00,094 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/reactor.conf
+2014-11-25 10:25:00,096 [salt.config                                 ][DEBUG   ] Guessing ID. The id can be explicitly in set /etc/salt/minion
+2014-11-25 10:25:00,127 [salt.config                                 ][INFO    ] Found minion id from generate_minion_id(): salt-master.saltlab
+2014-11-25 10:25:00,129 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master
+2014-11-25 10:25:00,142 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/auth.conf'
+2014-11-25 10:25:00,142 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/auth.conf
+2014-11-25 10:25:00,146 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ca.conf'
+2014-11-25 10:25:00,146 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ca.conf
+2014-11-25 10:25:00,147 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/gpg_renderer.conf'
+2014-11-25 10:25:00,147 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/gpg_renderer.conf
+2014-11-25 10:25:00,149 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/halite.conf'
+2014-11-25 10:25:00,150 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/halite.conf
+2014-11-25 10:25:00,155 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ovirt.conf'
+2014-11-25 10:25:00,156 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ovirt.conf
+2014-11-25 10:25:00,163 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/pillar.conf'
+2014-11-25 10:25:00,164 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/pillar.conf
+2014-11-25 10:25:00,170 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/reactor.conf'
+2014-11-25 10:25:00,170 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/reactor.conf
+2014-11-25 10:25:00,635 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master
+2014-11-25 10:25:00,648 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/auth.conf'
+2014-11-25 10:25:00,648 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/auth.conf
+2014-11-25 10:25:00,651 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ca.conf'
+2014-11-25 10:25:00,651 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ca.conf
+2014-11-25 10:25:00,653 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/gpg_renderer.conf'
+2014-11-25 10:25:00,653 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/gpg_renderer.conf
+2014-11-25 10:25:00,655 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/halite.conf'
+2014-11-25 10:25:00,655 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/halite.conf
+2014-11-25 10:25:00,661 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ovirt.conf'
+2014-11-25 10:25:00,662 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ovirt.conf
+2014-11-25 10:25:00,670 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/pillar.conf'
+2014-11-25 10:25:00,670 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/pillar.conf
+2014-11-25 10:25:00,676 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/reactor.conf'
+2014-11-25 10:25:00,677 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/reactor.conf
+2014-11-25 10:25:00,679 [salt.config                                 ][DEBUG   ] Guessing ID. The id can be explicitly in set /etc/salt/minion
+2014-11-25 10:25:00,709 [salt.config                                 ][INFO    ] Found minion id from generate_minion_id(): salt-master.saltlab
+2014-11-25 10:25:00,712 [salt.config                                 ][DEBUG   ] Missing configuration file: ~/.saltrc
+2014-11-25 10:25:00,841 [salt.loader                                 ][DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+2014-11-25 10:25:00,891 [salt.utils.event                            ][DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+2014-11-25 10:25:00,892 [salt.utils.event                            ][DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+2014-11-25 10:25:00,893 [salt.utils.event                            ][DEBUG   ] Sending event - data = {'_stamp': '2014-11-25T10:25:00.892458', 'changed': False, 'backend': 'roots'}
+2014-11-25 10:25:00,920 [salt.utils.verify                           ][DEBUG   ] This salt-master instance has accepted 28 minion keys.
+2014-11-25 10:25:12,244 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master
+2014-11-25 10:25:12,257 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/auth.conf'
+2014-11-25 10:25:12,257 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/auth.conf
+2014-11-25 10:25:12,261 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/ca.conf'
+2014-11-25 10:25:12,261 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/ca.conf
+2014-11-25 10:25:12,262 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/gpg_renderer.conf'
+2014-11-25 10:25:12,263 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/gpg_renderer.conf
+2014-11-25 10:25:12,265 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/halite.conf'
+2014-11-25 10:25:12,265 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/halite.conf
+2014-11-25 10:25:12,271 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/ovirt.conf'
+2014-11-25 10:25:12,271 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/ovirt.conf
+2014-11-25 10:25:12,279 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/pillar.conf'
+2014-11-25 10:25:12,279 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/pillar.conf
+2014-11-25 10:25:12,286 [salt.config      ][DEBUG   ] Including configuration from '/etc/salt/master.d/reactor.conf'
+2014-11-25 10:25:12,286 [salt.config      ][DEBUG   ] Reading configuration from /etc/salt/master.d/reactor.conf
+2014-11-25 10:25:12,288 [salt.config      ][DEBUG   ] Guessing ID. The id can be explicitly in set /etc/salt/minion
+2014-11-25 10:25:12,756 [salt.config      ][INFO    ] Found minion id from generate_minion_id(): salt-master.saltlab
+2014-11-25 10:25:12,759 [salt.config      ][DEBUG   ] Missing configuration file: ~/.saltrc
+2014-11-25 10:25:12,761 [salt.utils.event ][DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+2014-11-25 10:25:12,762 [salt.utils.event ][DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+2014-11-25 10:25:12,767 [salt.master                                ][INFO    ] Clear payload received with command publish
+2014-11-25 10:25:12,770 [salt.loader                                ][DEBUG   ] LazyLoaded local_cache.prep_jid
+2014-11-25 10:25:12,772 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'_stamp': '2014-11-25T10:25:12.771296', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:25:12,773 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20141125102512770028', 'tgt': '*', '_stamp': '2014-11-25T10:25:12.772929', 'user': 'root', 'arg': [], 'fun': 'pillar.items', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:25:12,774 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20141125102512770028', 'tgt': '*', '_stamp': '2014-11-25T10:25:12.773614', 'user': 'root', 'arg': [], 'fun': 'pillar.items', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:25:12,775 [salt.master                                ][INFO    ] User root Published command pillar.items with jid 20141125102512770028
+2014-11-25 10:25:12,775 [salt.master                                ][DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20141125102512770028', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': [], 'fun': 'pillar.items'}
+2014-11-25 10:25:12,776 [salt.master                                ][DEBUG   ] Signing data packet
+2014-11-25 10:25:12,776 [salt.crypt                                 ][DEBUG   ] salt.crypt.sign_message: Loading private key
+2014-11-25 10:25:12,777 [salt.crypt                                 ][DEBUG   ] salt.crypt.sign_message: Signing message.
+2014-11-25 10:25:12,808 [salt.loader      ][DEBUG   ] LazyLoaded local_cache.get_load
+2014-11-25 10:25:12,809 [salt.client      ][DEBUG   ] get_iter_returns for jid 20141125102512770028 sent to set(['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']) will timeout at 10:25:17.809022
+2014-11-25 10:25:12,841 [salt.master                                ][INFO    ] Clear payload received with command _auth
+2014-11-25 10:25:12,842 [salt.master                                ][INFO    ] Authentication request from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:12,843 [salt.master                                ][INFO    ] Authentication accepted from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:12,976 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'id': 'app-01.mt.widpi.lab.iad3.caltesting.org', '_stamp': '2014-11-25T10:25:12.975535', 'result': True, 'pub': '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApmETuRJBqDAurx9MlUZQ\n8b3jP/OqaeDECAV5KWA+0bUXZAx/tizDg62YbDGBEd9BbAbM2RFdXN9SBtykikji\nclPJc6yjtBZDEykWsGfwuB8JchjadKIthUEj3+UHKma635b8H+1btH7Zj+zxkXG5\nQDaHuyrGXC7suSzcc9aXskddDeF/+dTfqKpETyvci8ebyI5sxK9E8f3Q1EWp5o7U\n0C+mHE9/Cvz0xoa+nkyLrUY+sdG/WBt2o2PmhZ9EYMLLXfhJuFOW9Sg4vqLPCki1\n5yFgpa4OKJCyjF9WXY3pS6UMM1DN5qkGlz5A72l5gfxvtMQnYk5HQU2xjMXhLHlV\nae4bk6k4GRz07W8aUKt1WgP85iwSy3tViKFbz3BA1YQhF8dJU5NEMOcOWKDzckK9\nvqfCrgd7v4ArNuaKQwnwpCZJ+Qp39AlefRXsYnHEl/CMqfYdEwbC00Sn3hxvlETA\n0jF69plyqX59Sv08pa2WdZePCNAXQ1dWGggD8Z6Dt9lCEEpPpK7wu/J5s8g9Fa3T\nWvYdmQmafuYT3fXG7T91USYgUiyoHpG1Xk0+9MQ3/NdXbOWlQ6flkMJvAgQ5Ln2M\n3WmzoJ9EikXvFux8E49ChWfSK3QncCn6EorCCiIqN26p/aJ8fnW0Q2EOH9RkExZP\nMR+DOyJwyHyolWJWLRZC51cCAwEAAQ==\n-----END PUBLIC KEY-----\n', 'act': 'accept'}
+2014-11-25 10:25:13,120 [salt.master                                ][INFO    ] AES payload received with command _pillar
+2014-11-25 10:25:13,121 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.__init__, line, 127
+2014-11-25 10:25:13,122 [salt.pillar                                ][CRITICAL]  1 ##### opts:
+opts and whatnot
+grains: grains and things
+id_: app-01.mt.widpi.lab.iad3.caltesting.org, saltenv: None
+ext=None
+2014-11-25 10:25:13,122 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.__gen_opts, line, 178
+2014-11-25 10:25:13,123 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.__valid_ext, line, 166
+2014-11-25 10:25:13,123 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.__valid_ext, line, 166
+2014-11-25 10:25:13,123 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.__gen_opts, line, 178
+2014-11-25 10:25:13,192 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.__init__, line, 127
+2014-11-25 10:25:13,192 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.compile_pillar, line, 616
+2014-11-25 10:25:13,193 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.get_top, line, 356
+2014-11-25 10:25:13,193 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.get_tops, line, 225
+2014-11-25 10:25:13,194 [stephens_little_package                    ][CRITICAL] ---> salt.pillar._get_envs, line, 215
+2014-11-25 10:25:13,194 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar._get_envs, line, 215
+2014-11-25 10:25:13,201 [salt.utils.jinja                           ][DEBUG   ] Jinja search path: ['/srv/pillar/base', '/srv/pillar/private']
+2014-11-25 10:25:13,210 [salt.template                              ][DEBUG   ] Rendered data from file: /srv/pillar/base/top.sls:
+base:
+  '*':
+    - mine_config
+    - id_info
+
+2014-11-25 10:25:13,214 [salt.loaded.int.render.yaml                ][DEBUG   ] Results of YAML rendering: 
+OrderedDict([('base', OrderedDict([('*', ['mine_config', 'id_info'])]))])
+2014-11-25 10:25:13,214 [salt.loaded.ext.render.gpg                 ][DEBUG   ] Reading GPG keys from: /root/.gnupg
+2014-11-25 10:25:13,215 [gnupg                                      ][DEBUG   ] ['gpg', '--status-fd', '2', '--no-tty', '--homedir', '/root/.gnupg', '--version']
+2014-11-25 10:25:13,230 [gnupg                                      ][DEBUG   ] stderr reader: <Thread(Thread-1, initial daemon)>
+2014-11-25 10:25:13,235 [gnupg                                      ][DEBUG   ] stdout reader: <Thread(Thread-2, initial daemon)>
+2014-11-25 10:25:13,236 [gnupg                                      ][DEBUG   ] chunk: 'gpg (GnuPG) 2.0.14\nlibgcrypt 1.4.5\nCopyright (C) 2009 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to t'
+2014-11-25 10:25:13,237 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.get_tops, line, 225
+2014-11-25 10:25:13,238 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_tops, line, 307
+2014-11-25 10:25:13,238 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.sort_top_targets, line, 341
+2014-11-25 10:25:13,239 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.sort_top_targets, line, 341
+2014-11-25 10:25:13,239 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_tops, line, 307
+2014-11-25 10:25:13,239 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.get_top, line, 356
+2014-11-25 10:25:13,240 [salt.pillar                                ][CRITICAL]  1 ############: get_top = 
+top: defaultdict(<class 'collections.OrderedDict'>, {'base': OrderedDict([('*', ['mine_config', 'id_info'])])})
+terrors: []
+
+2014-11-25 10:25:13,240 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.top_matches, line, 369
+2014-11-25 10:25:13,241 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.top_matches, line, 369
+2014-11-25 10:25:13,241 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.top_matches, line, 369
+2014-11-25 10:25:13,242 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.top_matches, line, 369
+2014-11-25 10:25:13,242 [salt.pillar                                ][CRITICAL]  1.5 ############: top_matches = {'base': ['mine_config', 'id_info']}
+2014-11-25 10:25:13,243 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.render_pillar, line, 470
+2014-11-25 10:25:13,243 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.render_pstate, line, 396
+2014-11-25 10:25:13,248 [salt.utils.jinja                           ][DEBUG   ] Jinja search path: ['/srv/pillar/base', '/srv/pillar/private']
+2014-11-25 10:25:13,251 [salt.template                              ][DEBUG   ] Rendered data from file: /srv/pillar/base/mine_config.sls:
+
+mine_functions:
+  projects:
+    mine_function: grains.get
+    key: projects
+  project_lists:
+    mine_function: pillar.get
+    key: project_list
+
+mine_interval: 5
+
+
+2014-11-25 10:25:13,258 [salt.loaded.int.render.yaml                ][DEBUG   ] Results of YAML rendering: 
+OrderedDict([('mine_functions', OrderedDict([('projects', OrderedDict([('mine_function', 'grains.get'), ('key', 'projects')])), ('project_lists', OrderedDict([('mine_function', 'pillar.get'), ('key', 'project_list')]))])), ('mine_interval', 5)])
+2014-11-25 10:25:13,258 [salt.loaded.ext.render.gpg                 ][DEBUG   ] Reading GPG keys from: /root/.gnupg
+2014-11-25 10:25:13,259 [gnupg                                      ][DEBUG   ] ['gpg', '--status-fd', '2', '--no-tty', '--homedir', '/root/.gnupg', '--version']
+2014-11-25 10:25:13,273 [gnupg                                      ][DEBUG   ] stderr reader: <Thread(Thread-3, initial daemon)>
+2014-11-25 10:25:13,276 [gnupg                                      ][DEBUG   ] stdout reader: <Thread(Thread-4, initial daemon)>
+2014-11-25 10:25:13,277 [gnupg                                      ][DEBUG   ] chunk: 'gpg (GnuPG) 2.0.14\nlibgcrypt 1.4.5\nCopyright (C) 2009 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to t'
+2014-11-25 10:25:13,279 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.render_pstate, line, 396
+2014-11-25 10:25:13,279 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_sources, line, 591
+2014-11-25 10:25:13,280 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_recurse, line, 29
+2014-11-25 10:25:13,281 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_recurse, line, 29
+2014-11-25 10:25:13,281 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_sources, line, 591
+2014-11-25 10:25:13,282 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.render_pstate, line, 396
+2014-11-25 10:25:13,283 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.int.render.py.render, line, 83
+2014-11-25 10:25:13,285 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.module.id_info.explode, line, 99
+2014-11-25 10:25:13,286 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.module.id_info.hostinfo, line, 19
+2014-11-25 10:25:13,286 [salt.loaded.ext.module.id_info             ][CRITICAL]  minion_id = app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:13,287 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.module.id_info.hostinfo, line, 19
+2014-11-25 10:25:13,288 [salt.loaded.ext.module.id_info             ][CRITICAL]  minion_id = app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:13,288 [salt.loaded.ext.module.id_info             ][CRITICAL] Host lookup successful.  host = "app-01.mt.widpi.lab.iad3.caltesting.org"
+2014-11-25 10:25:13,291 [salt.loaded.ext.module.id_info             ][CRITICAL] and now, ID_INFO() (the ext_module): 
+{'component': 'mt',
+ 'environment': 'lab',
+ 'instance': '01',
+ 'location': 'iad3',
+ 'project': 'widpi',
+ 'project_list': {'widpi': {'mt': ['app']}},
+ 'subcomponent': 'app'}
+2014-11-25 10:25:13,292 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.module.id_info.explode, line, 99
+2014-11-25 10:25:13,292 [id_info                                    ][DEBUG   ] **<*>** {'environment': 'lab', 'project': 'widpi', 'project_list': {'widpi': {'mt': ['app']}}, 'location': 'iad3', 'instance': '01', 'subcomponent': 'app', 'component': 'mt', 'id_info': {'environment': 'lab', 'component': 'mt', 'project': 'widpi', 'instance': '01', 'location': 'iad3', 'subcomponent': 'app'}}
+2014-11-25 10:25:13,292 [salt.pillar                                ][CRITICAL] Rendering SLS 'id_info' failed, render error:
+global name 'log' is not defined
+2014-11-25 10:25:13,293 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.render_pstate, line, 396
+2014-11-25 10:25:13,293 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.render_pillar, line, 470
+2014-11-25 10:25:13,296 [salt.pillar                                ][CRITICAL] 
+
+ 2 ############: render_pillar = 
+pillar: {'mine_functions': {'project_lists': {'key': 'project_list',
+                                      'mine_function': 'pillar.get'},
+                    'projects': {'key': 'projects',
+                                 'mine_function': 'grains.get'}},
+ 'mine_interval': 5}
+errors: ["Rendering SLS 'id_info' failed. Please see master log for details."]
+
+2014-11-25 10:25:13,297 [salt.pillar                                ][CRITICAL] 
+
+ 3 ############: ext_pillar called with pillar:
+ {'mine_functions': {'project_lists': {'key': 'project_list',
+                                      'mine_function': 'pillar.get'},
+                    'projects': {'key': 'projects',
+                                 'mine_function': 'grains.get'}},
+ 'mine_interval': 5}
+
+pillar_dirs:
+{}
+2014-11-25 10:25:13,298 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.ext_pillar, line, 534
+2014-11-25 10:25:13,299 [salt.pillar                                ][CRITICAL] 
+
+  1 ##### pillar: 
+{'mine_functions': {'project_lists': {'key': 'project_list',
+                                      'mine_function': 'pillar.get'},
+                    'projects': {'key': 'projects',
+                                 'mine_function': 'grains.get'}},
+ 'mine_interval': 5}
+
+pillar_dirs: {}
+
+2014-11-25 10:25:13,300 [salt.pillar                                ][CRITICAL] Run ext_pillar: {'fukauf': {}}
+2014-11-25 10:25:13,300 [stephens_little_package                    ][CRITICAL] ---> salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:25:13,301 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.fukauf.ext_pillar, line, 10
+2014-11-25 10:25:13,301 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.fukauf.ext_pillar, line, 10
+2014-11-25 10:25:13,301 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:25:13,301 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_sources, line, 591
+2014-11-25 10:25:13,302 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_recurse, line, 29
+2014-11-25 10:25:13,302 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_recurse, line, 29
+2014-11-25 10:25:13,302 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_sources, line, 591
+2014-11-25 10:25:13,303 [salt.pillar                                ][CRITICAL] Run ext_pillar: {'component_matches': {}}
+2014-11-25 10:25:13,303 [stephens_little_package                    ][CRITICAL] ---> salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:25:13,304 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.component_matches.ext_pillar, line, 337
+2014-11-25 10:25:13,304 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.module.id_info.explode, line, 99
+2014-11-25 10:25:13,304 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.module.id_info.hostinfo, line, 19
+2014-11-25 10:25:13,305 [salt.loaded.ext.module.id_info             ][CRITICAL]  minion_id = app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:13,305 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.module.id_info.hostinfo, line, 19
+2014-11-25 10:25:13,306 [salt.loaded.ext.module.id_info             ][CRITICAL]  minion_id = app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:13,306 [salt.loaded.ext.module.id_info             ][CRITICAL] Host lookup successful.  host = "app-01.mt.widpi.lab.iad3.caltesting.org"
+2014-11-25 10:25:13,307 [salt.loaded.ext.module.id_info             ][CRITICAL] and now, ID_INFO() (the ext_module): 
+{'component': 'mt',
+ 'environment': 'lab',
+ 'instance': '01',
+ 'location': 'iad3',
+ 'project': 'widpi',
+ 'project_list': {'widpi': {'mt': ['app']}},
+ 'subcomponent': 'app'}
+2014-11-25 10:25:13,308 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.module.id_info.explode, line, 99
+2014-11-25 10:25:13,308 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ] -=-=-=-app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:13,309 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ] app-01.mt.widpi.lab.iad3.caltesting.org dispatched to single-tenant pillar
+2014-11-25 10:25:13,309 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.component_matches._traverse_single_tenant, line, 283
+2014-11-25 10:25:13,309 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.component_matches._base_app_data, line, 205
+2014-11-25 10:25:13,310 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]         get stennant base data from /srv/pillar/base/applications/widpi/all_the_things.yaml
+2014-11-25 10:25:13,310 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]       Reading configuration data from /srv/pillar/base/applications/widpi/all_the_things.yaml
+2014-11-25 10:25:13,359 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.component_matches._base_app_data, line, 205
+2014-11-25 10:25:13,360 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.component_matches._base_app_data, line, 205
+2014-11-25 10:25:13,360 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]         get stennant base data from /srv/pillar/base/applications/widpi/lab/all_things_lab.yaml
+2014-11-25 10:25:13,361 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]       Reading configuration data from /srv/pillar/base/applications/widpi/lab/all_things_lab.yaml
+2014-11-25 10:25:13,361 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.component_matches._base_app_data, line, 205
+2014-11-25 10:25:13,362 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]  _tst() --> ATT: 
+{'haproxy': {'ep': [{'sls_files': ['applications/widpi/ep/*']}]}, 'rs': {'app': [{'sls_files': ['applications/widpi/rs/tomcat/app']}], 'bat': [{'sls_files': ['applications/widpi/rs/tomcat/bat']}]}, 'gluster': {'brick': [{'sls_files': ['applications/widpi/gluster/*']}]}, 'tde': {'adm': [{'sls_files': ['applications/widpi/tde/tomcat/adm']}], 'api': [{'sls_files': ['applications/widpi/tde/tomcat/api', 'applications/widpi/tde/pg', 'applications/widpi/pg/info', 'applications/widpi/tde/mq', 'applications/widpi/mq/platform_tde_recvq']}], 'db': [{'sls_files': ['applications/widpi/tde/pg', 'applications/widpi/pg/info']}]}, 'mt': {'app': [{'sls_files': ['applications/widpi/mt/tomcat/app', 'applications/widpi/mq/platform_mt_recvq']}], 'api': [{'sls_files': ['applications/widpi/mt/tomcat/api', 'applications/widpi/mq/platform_mt_recvq']}], 'db': [{'sls_files': ['applications/widpi/mt/pg', 'applications/widpi/pg/info']}, {'sls_files': ['applications/widpi/mt/pg_replication', 'applications/widpi/pg/info']}], 'bat': [{'sls_files': ['applications/widpi/mt/tomcat/bat', 'applications/widpi/mt/pg', 'applications/widpi/pg/info']}]}, 'at': {'api': [{'sls_files': ['applications/widpi/at/tomcat/api']}]}, 'rabbit': {'mq': [{'sls_files': ['applications/widpi/mq/*']}]}, 'dw': {'bat': [{'sls_files': ['applications/widpi/dw/tomcat/bat', 'applications/widpi/dw/pg', 'applications/widpi/pg/info']}], 'api': [{'sls_files': ['applications/widpi/dw/tomcat/api', 'applications/widpi/dw/pg', 'applications/widpi/pg/info']}], 'db': [{'sls_files': ['applications/widpi/dw/pg', 'applications/widpi/pg/info']}], 'es': [{'sls_files': ['applications/widpi/dw/es']}]}, 'tss': {'bat': [{'sls_files': ['applications/widpi/tss/tomcat/bat']}], 'api': [{'sls_files': ['applications/widpi/tss/tomcat/api', 'applications/widpi/tss/mongo', 'applications/widpi/mq/platform_tss_announce', 'applications/widpi/at/ep']}], 'modsec': [{'sls_files': ['applications/widpi/tss/http', 'applications/widpi/tss/owasp']}], 'mongo': [{'sls_files': ['applications/widpi/mongo/db_admin', 'applications/widpi/mongo/db_users']}]}}
+2014-11-25 10:25:13,363 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ] 	tcd(): 
+		instance_vals = {'sls_files': ['applications/widpi/mt/tomcat/app',
+               'applications/widpi/mq/platform_mt_recvq']}
+		config_bits = [{'sls_files': ['applications/widpi/mt/tomcat/app',
+                'applications/widpi/mq/platform_mt_recvq']}]
+2014-11-25 10:25:13,364 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]   _tcd(): sls_files = ['/srv/pillar/base/applications/widpi/lab/mt/tomcat/app',
+ '/srv/pillar/base/applications/widpi/lab/mq/platform_mt_recvq']
+2014-11-25 10:25:13,365 [stephens_little_package                    ][CRITICAL] ---> salt.loaded.ext.pillar.component_matches._read_app_data, line, 173
+2014-11-25 10:25:13,366 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]  _rad(): sls_files = ['/srv/pillar/base/applications/widpi/lab/mt/tomcat/app',
+ '/srv/pillar/base/applications/widpi/lab/mq/platform_mt_recvq']
+2014-11-25 10:25:13,366 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]  _rad(): sls_file (bits_to_read): ['/srv/pillar/base/applications/widpi/lab/mt/tomcat/app']
+2014-11-25 10:25:13,373 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]      reading: /srv/pillar/base/applications/widpi/lab/mt/tomcat/app and got: 
+{'tomcat': {'jdbc_name': 'jdbc/nothing',
+            'max_heap': '512m',
+            'max_perm': '128m',
+            'overrides': ['max_heap', 'start_heap', 'max_perm', 'jdbc_name'],
+            'says': 'meow',
+            'start_heap': '128m'}}
+2014-11-25 10:25:13,373 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]  _rad(): sls_file (bits_to_read): []
+2014-11-25 10:25:13,375 [salt.loaded.ext.pillar.component_matches   ][DEBUG   ]  _rad(): returning this:  {'tomcat': {'jdbc_name': 'jdbc/nothing',
+            'max_heap': '512m',
+            'max_perm': '128m',
+            'overrides': ['max_heap', 'start_heap', 'max_perm', 'jdbc_name'],
+            'says': 'meow',
+            'start_heap': '128m'}}
+2014-11-25 10:25:13,375 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.component_matches._read_app_data, line, 173
+2014-11-25 10:25:13,376 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.component_matches._traverse_single_tenant, line, 283
+2014-11-25 10:25:13,376 [stephens_little_package                    ][CRITICAL]          <--- salt.loaded.ext.pillar.component_matches.ext_pillar, line, 337
+2014-11-25 10:25:13,376 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:25:13,377 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_sources, line, 591
+2014-11-25 10:25:13,377 [stephens_little_package                    ][CRITICAL] ---> salt.pillar.merge_recurse, line, 29
+2014-11-25 10:25:13,378 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_recurse, line, 29
+2014-11-25 10:25:13,378 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.merge_sources, line, 591
+2014-11-25 10:25:13,378 [salt.pillar                                ][CRITICAL] Run ext_pillar: {'tls_gen': {'filter_': '^\\s*__@(.*)@__\\s*.*'}}
+2014-11-25 10:25:13,379 [stephens_little_package                    ][CRITICAL] ---> salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:25:13,380 [salt.loaded.ext.pillar.tls_gen             ][DEBUG   ] FILTER: ^\s*__@(.*)@__\s*.*
+2014-11-25 10:25:13,380 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:25:13,380 [salt.pillar                                ][CRITICAL] Run ext_pillar: {'secrets': {'filter_': '^\\s*o_@(.*)@_o\\s*.*', 'gnupg_user': 'CA&L Salt Master'}}
+2014-11-25 10:25:13,381 [stephens_little_package                    ][CRITICAL] ---> salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:25:13,381 [salt.loaded.ext.pillar.secrets             ][DEBUG   ] FILTER: ^\s*o_@(.*)@_o\s*.*
+2014-11-25 10:25:13,382 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar._external_pillar_data, line, 502
+2014-11-25 10:25:13,382 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.ext_pillar, line, 534
+2014-11-25 10:25:13,383 [salt.pillar                                ][CRITICAL] 
+
+ 4 ###########: errors: ["Rendering SLS 'id_info' failed. Please see master log for details."]
+length of errors: 1
+2014-11-25 10:25:13,383 [salt.pillar                                ][CRITICAL] Pillar render error: Rendering SLS 'id_info' failed. Please see master log for details.
+2014-11-25 10:25:13,384 [salt.pillar                                ][CRITICAL]  5 ############: final pillar = 
+
+2014-11-25 10:25:13,384 [stephens_little_package                    ][CRITICAL]          <--- salt.pillar.compile_pillar, line, 616
+2014-11-25 10:25:13,468 [salt.master                                ][INFO    ] Clear payload received with command _auth
+2014-11-25 10:25:13,468 [salt.master                                ][INFO    ] Authentication request from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:13,469 [salt.master                                ][INFO    ] Authentication accepted from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:13,602 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'id': 'app-01.mt.widpi.lab.iad3.caltesting.org', '_stamp': '2014-11-25T10:25:13.601343', 'result': True, 'pub': '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApmETuRJBqDAurx9MlUZQ\n8b3jP/OqaeDECAV5KWA+0bUXZAx/tizDg62YbDGBEd9BbAbM2RFdXN9SBtykikji\nclPJc6yjtBZDEykWsGfwuB8JchjadKIthUEj3+UHKma635b8H+1btH7Zj+zxkXG5\nQDaHuyrGXC7suSzcc9aXskddDeF/+dTfqKpETyvci8ebyI5sxK9E8f3Q1EWp5o7U\n0C+mHE9/Cvz0xoa+nkyLrUY+sdG/WBt2o2PmhZ9EYMLLXfhJuFOW9Sg4vqLPCki1\n5yFgpa4OKJCyjF9WXY3pS6UMM1DN5qkGlz5A72l5gfxvtMQnYk5HQU2xjMXhLHlV\nae4bk6k4GRz07W8aUKt1WgP85iwSy3tViKFbz3BA1YQhF8dJU5NEMOcOWKDzckK9\nvqfCrgd7v4ArNuaKQwnwpCZJ+Qp39AlefRXsYnHEl/CMqfYdEwbC00Sn3hxvlETA\n0jF69plyqX59Sv08pa2WdZePCNAXQ1dWGggD8Z6Dt9lCEEpPpK7wu/J5s8g9Fa3T\nWvYdmQmafuYT3fXG7T91USYgUiyoHpG1Xk0+9MQ3/NdXbOWlQ6flkMJvAgQ5Ln2M\n3WmzoJ9EikXvFux8E49ChWfSK3QncCn6EorCCiIqN26p/aJ8fnW0Q2EOH9RkExZP\nMR+DOyJwyHyolWJWLRZC51cCAwEAAQ==\n-----END PUBLIC KEY-----\n', 'act': 'accept'}
+2014-11-25 10:25:13,741 [salt.master                                ][INFO    ] AES payload received with command _return
+2014-11-25 10:25:13,741 [salt.master                                ][INFO    ] Got return from app-01.mt.widpi.lab.iad3.caltesting.org for job 20141125102512770028
+2014-11-25 10:25:13,743 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'fun_args': [], 'jid': '20141125102512770028', 'return': {'IAM': 'app-01.mt.widpi.lab.iad3.caltesting.org', 'mine_interval': 5, 'tomcat': {'start_heap': '128m', 'says': 'meow', 'overrides': ['max_heap', 'start_heap', 'max_perm', 'jdbc_name'], 'jdbc_name': 'jdbc/nothing', 'max_perm': '128m', 'max_heap': '512m'}, 'pillar_keys': ['mine_functions', 'mine_interval'], 'cake': 'truth', 'mine_functions': {'project_lists': {'mine_function': 'pillar.get', 'key': 'project_list'}, 'projects': {'mine_function': 'grains.get', 'key': 'projects'}}, '_errors': ["Rendering SLS 'id_info' failed. Please see master log for details."]}, 'retcode': 0, 'success': True, 'cmd': '_return', '_stamp': '2014-11-25T10:25:13.743072', 'fun': 'pillar.items', 'id': 'app-01.mt.widpi.lab.iad3.caltesting.org'}
+2014-11-25 10:25:13,744 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'fun_args': [], 'jid': '20141125102512770028', 'return': {'IAM': 'app-01.mt.widpi.lab.iad3.caltesting.org', 'mine_interval': 5, 'tomcat': {'start_heap': '128m', 'says': 'meow', 'overrides': ['max_heap', 'start_heap', 'max_perm', 'jdbc_name'], 'jdbc_name': 'jdbc/nothing', 'max_perm': '128m', 'max_heap': '512m'}, 'pillar_keys': ['mine_functions', 'mine_interval'], 'cake': 'truth', 'mine_functions': {'project_lists': {'mine_function': 'pillar.get', 'key': 'project_list'}, 'projects': {'mine_function': 'grains.get', 'key': 'projects'}}, '_errors': ["Rendering SLS 'id_info' failed. Please see master log for details."]}, 'retcode': 0, 'success': True, 'cmd': '_return', '_stamp': '2014-11-25T10:25:13.744024', 'fun': 'pillar.items', 'id': 'app-01.mt.widpi.lab.iad3.caltesting.org'}
+2014-11-25 10:25:13,747 [salt.loader                                ][DEBUG   ] LazyLoaded local_cache.returner
+2014-11-25 10:25:13,752 [salt.client      ][DEBUG   ] jid 20141125102512770028 return from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:17,809 [salt.utils.event ][DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+2014-11-25 10:25:17,810 [salt.utils.event ][DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+2014-11-25 10:25:17,811 [salt.client      ][DEBUG   ] Checking whether jid 20141125102512770028 is still running
+2014-11-25 10:25:17,813 [salt.master                                ][INFO    ] Clear payload received with command publish
+2014-11-25 10:25:17,815 [salt.loader                                ][DEBUG   ] LazyLoaded local_cache.prep_jid
+2014-11-25 10:25:17,817 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'_stamp': '2014-11-25T10:25:17.816801', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:25:17,818 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20141125102517815693', 'tgt': '*', '_stamp': '2014-11-25T10:25:17.817447', 'user': 'root', 'arg': ['20141125102512770028'], 'fun': 'saltutil.find_job', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:25:17,818 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20141125102517815693', 'tgt': '*', '_stamp': '2014-11-25T10:25:17.818018', 'user': 'root', 'arg': ['20141125102512770028'], 'fun': 'saltutil.find_job', 'minions': ['mongo-01.tss.widpi.sqa.iad3.caltesting.org', 'modsec-01.tss.widpi.sqa.iad3.caltesting.org', 'api-01.tss.widpi.lab.iad3.caltesting.org', 'mongo-01.tss.widpi.lab.iad3.caltesting.org', 'app-01.mt.widpi.lab.iad3.caltesting.org', 'app-01.rs.widpi.lab.iad3.caltesting.org', 'modsec-01.tss.widpi.lab.iad3.caltesting.org', 'mq-01.rabbit.widpi.sqa.iad3.caltesting.org', 'db-01.mt.widpi.lab.iad3.caltesting.org', 'db-01.pg.mten.sqa.iad3.caltesting.org', 'mq-01.rabbit.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.mten.sqa.iad3.caltesting.org', 'app-02.tc.mten.lab.iad3.caltesting.org', 'ep-01.haproxy.widpi.lab.iad3.caltesting.org', 'db-02.mt.widpi.lab.iad3.caltesting.org', 'return-db-01.saltlab', 'db-01.rs.widpi.lab.iad3.caltesting.org', 'app-02.mt.widpi.lab.iad3.caltesting.org', 'app-01.at.widpi.lab.iad3.caltesting.org', 'adm-01.tde.widpi.lab.iad3.caltesting.org', 'app-01.tc.mten.lab.iad3.caltesting.org', 'api-01.tde.widpi.lab.iad3.caltesting.org', 'ep-01.haproxy.global.lab.iad3.caltesting.org', 'db-01.tde.widpi.lab.iad3.caltesting.org', 'salt-master.saltlab', 'db-01.dw.widpi.lab.iad3.caltesting.org', 'bat-01.mt.widpi.lab.iad3.caltesting.org']}
+2014-11-25 10:25:17,819 [salt.master                                ][INFO    ] User root Published command saltutil.find_job with jid 20141125102517815693
+2014-11-25 10:25:17,820 [salt.master                                ][DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20141125102517815693', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': ['20141125102512770028'], 'fun': 'saltutil.find_job'}
+2014-11-25 10:25:17,820 [salt.master                                ][DEBUG   ] Signing data packet
+2014-11-25 10:25:17,820 [salt.crypt                                 ][DEBUG   ] salt.crypt.sign_message: Loading private key
+2014-11-25 10:25:17,821 [salt.crypt                                 ][DEBUG   ] salt.crypt.sign_message: Signing message.
+2014-11-25 10:25:17,889 [salt.master                                ][INFO    ] Clear payload received with command _auth
+2014-11-25 10:25:17,889 [salt.master                                ][INFO    ] Authentication request from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:17,890 [salt.master                                ][INFO    ] Authentication accepted from app-01.mt.widpi.lab.iad3.caltesting.org
+2014-11-25 10:25:18,042 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'id': 'app-01.mt.widpi.lab.iad3.caltesting.org', '_stamp': '2014-11-25T10:25:18.041733', 'result': True, 'pub': '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApmETuRJBqDAurx9MlUZQ\n8b3jP/OqaeDECAV5KWA+0bUXZAx/tizDg62YbDGBEd9BbAbM2RFdXN9SBtykikji\nclPJc6yjtBZDEykWsGfwuB8JchjadKIthUEj3+UHKma635b8H+1btH7Zj+zxkXG5\nQDaHuyrGXC7suSzcc9aXskddDeF/+dTfqKpETyvci8ebyI5sxK9E8f3Q1EWp5o7U\n0C+mHE9/Cvz0xoa+nkyLrUY+sdG/WBt2o2PmhZ9EYMLLXfhJuFOW9Sg4vqLPCki1\n5yFgpa4OKJCyjF9WXY3pS6UMM1DN5qkGlz5A72l5gfxvtMQnYk5HQU2xjMXhLHlV\nae4bk6k4GRz07W8aUKt1WgP85iwSy3tViKFbz3BA1YQhF8dJU5NEMOcOWKDzckK9\nvqfCrgd7v4ArNuaKQwnwpCZJ+Qp39AlefRXsYnHEl/CMqfYdEwbC00Sn3hxvlETA\n0jF69plyqX59Sv08pa2WdZePCNAXQ1dWGggD8Z6Dt9lCEEpPpK7wu/J5s8g9Fa3T\nWvYdmQmafuYT3fXG7T91USYgUiyoHpG1Xk0+9MQ3/NdXbOWlQ6flkMJvAgQ5Ln2M\n3WmzoJ9EikXvFux8E49ChWfSK3QncCn6EorCCiIqN26p/aJ8fnW0Q2EOH9RkExZP\nMR+DOyJwyHyolWJWLRZC51cCAwEAAQ==\n-----END PUBLIC KEY-----\n', 'act': 'accept'}
+2014-11-25 10:25:18,184 [salt.master                                ][INFO    ] AES payload received with command _return
+2014-11-25 10:25:18,185 [salt.master                                ][INFO    ] Got return from app-01.mt.widpi.lab.iad3.caltesting.org for job 20141125102517815693
+2014-11-25 10:25:18,186 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'fun_args': ['20141125102512770028'], 'jid': '20141125102517815693', 'return': {}, 'retcode': 0, 'success': True, 'cmd': '_return', '_stamp': '2014-11-25T10:25:18.185791', 'fun': 'saltutil.find_job', 'id': 'app-01.mt.widpi.lab.iad3.caltesting.org'}
+2014-11-25 10:25:18,187 [salt.utils.event                           ][DEBUG   ] Sending event - data = {'fun_args': ['20141125102512770028'], 'jid': '20141125102517815693', 'return': {}, 'retcode': 0, 'success': True, 'cmd': '_return', '_stamp': '2014-11-25T10:25:18.186562', 'fun': 'saltutil.find_job', 'id': 'app-01.mt.widpi.lab.iad3.caltesting.org'}
+2014-11-25 10:25:18,189 [salt.loader                                ][DEBUG   ] LazyLoaded local_cache.returner
+2014-11-25 10:26:00,981 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master
+2014-11-25 10:26:00,995 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/auth.conf'
+2014-11-25 10:26:00,996 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/auth.conf
+2014-11-25 10:26:00,999 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ca.conf'
+2014-11-25 10:26:00,1000 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ca.conf
+2014-11-25 10:26:01,001 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/gpg_renderer.conf'
+2014-11-25 10:26:01,002 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/gpg_renderer.conf
+2014-11-25 10:26:01,004 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/halite.conf'
+2014-11-25 10:26:01,004 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/halite.conf
+2014-11-25 10:26:01,010 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ovirt.conf'
+2014-11-25 10:26:01,011 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ovirt.conf
+2014-11-25 10:26:01,019 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/pillar.conf'
+2014-11-25 10:26:01,019 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/pillar.conf
+2014-11-25 10:26:01,026 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/reactor.conf'
+2014-11-25 10:26:01,027 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/reactor.conf
+2014-11-25 10:26:01,029 [salt.config                                 ][DEBUG   ] Guessing ID. The id can be explicitly in set /etc/salt/minion
+2014-11-25 10:26:01,063 [salt.config                                 ][INFO    ] Found minion id from generate_minion_id(): salt-master.saltlab
+2014-11-25 10:26:01,066 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master
+2014-11-25 10:26:01,081 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/auth.conf'
+2014-11-25 10:26:01,082 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/auth.conf
+2014-11-25 10:26:01,085 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ca.conf'
+2014-11-25 10:26:01,086 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ca.conf
+2014-11-25 10:26:01,088 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/gpg_renderer.conf'
+2014-11-25 10:26:01,088 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/gpg_renderer.conf
+2014-11-25 10:26:01,090 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/halite.conf'
+2014-11-25 10:26:01,090 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/halite.conf
+2014-11-25 10:26:01,096 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ovirt.conf'
+2014-11-25 10:26:01,096 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ovirt.conf
+2014-11-25 10:26:01,104 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/pillar.conf'
+2014-11-25 10:26:01,104 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/pillar.conf
+2014-11-25 10:26:01,111 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/reactor.conf'
+2014-11-25 10:26:01,111 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/reactor.conf
+2014-11-25 10:26:01,593 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master
+2014-11-25 10:26:01,608 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/auth.conf'
+2014-11-25 10:26:01,609 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/auth.conf
+2014-11-25 10:26:01,612 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ca.conf'
+2014-11-25 10:26:01,613 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ca.conf
+2014-11-25 10:26:01,614 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/gpg_renderer.conf'
+2014-11-25 10:26:01,615 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/gpg_renderer.conf
+2014-11-25 10:26:01,617 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/halite.conf'
+2014-11-25 10:26:01,617 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/halite.conf
+2014-11-25 10:26:01,624 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ovirt.conf'
+2014-11-25 10:26:01,624 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ovirt.conf
+2014-11-25 10:26:01,632 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/pillar.conf'
+2014-11-25 10:26:01,633 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/pillar.conf
+2014-11-25 10:26:01,640 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/reactor.conf'
+2014-11-25 10:26:01,640 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/reactor.conf
+2014-11-25 10:26:01,642 [salt.config                                 ][DEBUG   ] Guessing ID. The id can be explicitly in set /etc/salt/minion
+2014-11-25 10:26:01,819 [salt.config                                 ][INFO    ] Found minion id from generate_minion_id(): salt-master.saltlab
+2014-11-25 10:26:01,822 [salt.config                                 ][DEBUG   ] Missing configuration file: ~/.saltrc
+2014-11-25 10:26:01,961 [salt.loader                                 ][DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+2014-11-25 10:26:02,014 [salt.utils.event                            ][DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+2014-11-25 10:26:02,014 [salt.utils.event                            ][DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+2014-11-25 10:26:02,016 [salt.utils.event                            ][DEBUG   ] Sending event - data = {'_stamp': '2014-11-25T10:26:02.015369', 'changed': False, 'backend': 'roots'}
+2014-11-25 10:26:02,042 [salt.utils.verify                           ][DEBUG   ] This salt-master instance has accepted 28 minion keys.
+2014-11-25 10:27:02,103 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master
+2014-11-25 10:27:02,116 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/auth.conf'
+2014-11-25 10:27:02,117 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/auth.conf
+2014-11-25 10:27:02,120 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ca.conf'
+2014-11-25 10:27:02,120 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ca.conf
+2014-11-25 10:27:02,122 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/gpg_renderer.conf'
+2014-11-25 10:27:02,122 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/gpg_renderer.conf
+2014-11-25 10:27:02,124 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/halite.conf'
+2014-11-25 10:27:02,125 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/halite.conf
+2014-11-25 10:27:02,131 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ovirt.conf'
+2014-11-25 10:27:02,132 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ovirt.conf
+2014-11-25 10:27:02,140 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/pillar.conf'
+2014-11-25 10:27:02,140 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/pillar.conf
+2014-11-25 10:27:02,147 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/reactor.conf'
+2014-11-25 10:27:02,147 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/reactor.conf
+2014-11-25 10:27:02,149 [salt.config                                 ][DEBUG   ] Guessing ID. The id can be explicitly in set /etc/salt/minion
+2014-11-25 10:27:02,194 [salt.config                                 ][INFO    ] Found minion id from generate_minion_id(): salt-master.saltlab
+2014-11-25 10:27:02,197 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master
+2014-11-25 10:27:02,210 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/auth.conf'
+2014-11-25 10:27:02,211 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/auth.conf
+2014-11-25 10:27:02,214 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ca.conf'
+2014-11-25 10:27:02,214 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ca.conf
+2014-11-25 10:27:02,216 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/gpg_renderer.conf'
+2014-11-25 10:27:02,216 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/gpg_renderer.conf
+2014-11-25 10:27:02,218 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/halite.conf'
+2014-11-25 10:27:02,218 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/halite.conf
+2014-11-25 10:27:02,224 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ovirt.conf'
+2014-11-25 10:27:02,225 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ovirt.conf
+2014-11-25 10:27:02,232 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/pillar.conf'
+2014-11-25 10:27:02,233 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/pillar.conf
+2014-11-25 10:27:02,239 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/reactor.conf'
+2014-11-25 10:27:02,239 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/reactor.conf
+2014-11-25 10:27:02,712 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master
+2014-11-25 10:27:02,725 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/auth.conf'
+2014-11-25 10:27:02,725 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/auth.conf
+2014-11-25 10:27:02,729 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ca.conf'
+2014-11-25 10:27:02,729 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ca.conf
+2014-11-25 10:27:02,730 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/gpg_renderer.conf'
+2014-11-25 10:27:02,731 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/gpg_renderer.conf
+2014-11-25 10:27:02,733 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/halite.conf'
+2014-11-25 10:27:02,733 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/halite.conf
+2014-11-25 10:27:02,739 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/ovirt.conf'
+2014-11-25 10:27:02,739 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/ovirt.conf
+2014-11-25 10:27:02,747 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/pillar.conf'
+2014-11-25 10:27:02,748 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/pillar.conf
+2014-11-25 10:27:02,754 [salt.config                                 ][DEBUG   ] Including configuration from '/etc/salt/master.d/reactor.conf'
+2014-11-25 10:27:02,754 [salt.config                                 ][DEBUG   ] Reading configuration from /etc/salt/master.d/reactor.conf
+2014-11-25 10:27:02,756 [salt.config                                 ][DEBUG   ] Guessing ID. The id can be explicitly in set /etc/salt/minion
+2014-11-25 10:27:02,793 [salt.config                                 ][INFO    ] Found minion id from generate_minion_id(): salt-master.saltlab
+2014-11-25 10:27:02,795 [salt.config                                 ][DEBUG   ] Missing configuration file: ~/.saltrc
+2014-11-25 10:27:02,931 [salt.loader                                 ][DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+2014-11-25 10:27:02,984 [salt.utils.event                            ][DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+2014-11-25 10:27:02,984 [salt.utils.event                            ][DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+2014-11-25 10:27:02,985 [salt.utils.event                            ][DEBUG   ] Sending event - data = {'_stamp': '2014-11-25T10:27:02.984963', 'changed': False, 'backend': 'roots'}
+2014-11-25 10:27:03,013 [salt.utils.verify                           ][DEBUG   ] This salt-master instance has accepted 28 minion keys.
